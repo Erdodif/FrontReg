@@ -1,0 +1,47 @@
+label{
+    user-select: none;
+}
+body{
+    background: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    text-align: center;
+}
+.tartalom{
+    position: fixed;
+    margin:auto;
+    align-self: center;
+    background: white;
+    width: min(100%,30rem);
+    margin-inline:auto;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+form > label, form > input {
+    padding-block-start:.2em;
+    margin-block-start:1.4em;
+}
+form > label{
+    width: 25%;
+    text-align: right;
+}
+form > input{
+    width: 55%;
+}
+form > input[type="submit"]{
+    width: 30%;
+}
+.karakter{
+    width: 80%;
+    text-align: right;
+    font-size: .8rem;
+    padding-top: 0;
+}
+.hiba{
+    color: tomato;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="brain.js"></script>
+</head>
+<body>
+    <div class="tartalom">
+        <h2>
+            Bejelentkezés
+        </h2>
+        <form onsubmit="return validacio();" method="post">
+            <label for="nev">Név:</label>
+            <input type="text" name="nev" id="nev" required>
+            <span class="karakter" id="k_nev">0/20</span>
+            <label for="nev">Jelszó:</label>
+            <input type="password" name="jelszo" id="jelszo" required>
+            <span class="karakter" id="k_jelszo">0/8</span>
+            <label for="nev">Jelszó ismét:</label>
+            <input type="password" name="jelszo_ismet" id="jelszo_ismet" required>
+            <span class="karakter" id="k_jelszo_ismet">Egyezik</span>
+            <input type="submit" value="Küldés">
+        </form>  
+    </div>  
+</body>
+</html>
