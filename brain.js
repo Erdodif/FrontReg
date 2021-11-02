@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded",init);
 function init(){
     document.getElementById("nev").addEventListener("input",nevValidacio);
     document.getElementById("jelszo").addEventListener("input",jelszoValidacio);
+    document.getElementById("jelszo").addEventListener("change",jelszoIsmetValidacio);
     document.getElementById("jelszo_ismet").addEventListener("change",jelszoIsmetValidacio);
 }
 function validacio(){
