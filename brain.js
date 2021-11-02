@@ -4,6 +4,10 @@ function init(){
     document.getElementById("jelszo").addEventListener("input",jelszoValidacio);
     document.getElementById("jelszo").addEventListener("change",jelszoIsmetValidacio);
     document.getElementById("jelszo_ismet").addEventListener("change",jelszoIsmetValidacio);
+    document.getElementById("form").addEventListener("submit",(e)=>{
+        e.preventDefault();
+        validacio();
+    });
 }
 function validacio(){
     if (nevValidacio() && jelszoValidacio() && jelszoIsmetValidacio()){
